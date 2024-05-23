@@ -1,4 +1,4 @@
-[wgpu tutorial](https://sotrh.github.io/learn-wgpu/#what-is-wgpu)
+Start with [wgpu tutorial](https://sotrh.github.io/learn-wgpu/#what-is-wgpu) before expanding into custom functionality. Maybe follow up with `boxii-odin` project?
 
 - [ ] Beginner
     - [x] Deps and the window
@@ -17,7 +17,8 @@
     - [ ] High Dynamic Range Rendering
 
 
-Going Beyond
+**Going Beyond**
+
 - [ ] Pan canvas cursor
 - [ ] Selection cursor
 - [ ] Create rectangle tool
@@ -26,3 +27,14 @@ Going Beyond
 - [ ] Create line tool
     - [ ] Change line color
     - [ ] Resize line
+
+---
+
+**Setup**
+
+1. Install [Rust](https://www.rust-lang.org/tools/install) (duh)
+1. Install [esbuild](https://esbuild.github.io/getting-started/#other-ways-to-install)
+
+**Test**
+
+Run `./test.sh`
