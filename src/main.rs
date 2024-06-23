@@ -1,5 +1,5 @@
 use boxii_rust::run;
 
 fn main() {
-    run();
+    pollster::block_on(run());
 }
