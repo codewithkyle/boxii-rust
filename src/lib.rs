@@ -162,7 +162,7 @@ impl<'a> State<'a> {
             });
 
         {
-            let _render_pass = encoder.begin_render_pass(&wgpu::RenderPassDescriptor {
+            let mut render_pass = encoder.begin_render_pass(&wgpu::RenderPassDescriptor {
                 label: Some("Render Pass"),
                 color_attachments: &[Some(wgpu::RenderPassColorAttachment {
                     view: &view,
@@ -181,7 +181,11 @@ impl<'a> State<'a> {
                 occlusion_query_set: None,
                 timestamp_writes: None,
             });
+
+            render_pass.set_pipeline(&self.render_pipeline);
+            render_pass.draw(0..3, 0..1);
         }
+
 
         // submit accepts anything that impls IntoIter
         self.queue.submit(std::iter::once(encoder.finish()));

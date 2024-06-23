@@ -1,6 +1,6 @@
 // Vertex shader
 
-struct VertexOutpt {
+struct VertexOutput {
     @builtin(position) clip_position: vec4<f32>,
     @location(0) vert_pos: vec3<f32>,
 };
