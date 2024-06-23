@@ -2,7 +2,7 @@ Start with [wgpu tutorial](https://sotrh.github.io/learn-wgpu/#what-is-wgpu) bef
 
 - [ ] Beginner
     - [x] Deps and the window
-    - [ ] The Surface
+    - [x] The Surface
     - [ ] The Pipeline
     - [ ] Buffers and Indicies
     - [ ] Textures and bind groups
