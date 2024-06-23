@@ -84,7 +84,12 @@ impl<'a> State<'a> {
     }
 
     fn resize(&mut self, new_size: winit::dpi::PhysicalSize<u32>) {
-        todo!()
+        if new_size.width > 0 && new_size.height > 0 {
+            self.size = new_size;
+            self.config.width = new_size.width;
+            self.config.height = new_size.height;
+            self.surface.configure(&self.device, &self.config);
+        }
     }
 
     fn input(&mut self, event: &WindowEvent) -> bool {
@@ -149,6 +154,9 @@ pub async fn run() {
                     },
                 ..
             } => control_flow.exit(),
+            WindowEvent::Resized(physical_size) => {
+                state.resize(*physical_size);
+            }
             _ => {}
         },
         _ => {}
