@@ -5,7 +5,7 @@ Start with [wgpu tutorial](https://sotrh.github.io/learn-wgpu/#what-is-wgpu) bef
     - [x] The Surface
     - [x] The Pipeline
     - [x] Buffers and Indicies
-    - [ ] Textures and bind groups
+    - [x] Textures and bind groups
     - [ ] Uniform buffers and 3d camera
     - [ ] Instancing
     - [ ] The Depth Buffer
