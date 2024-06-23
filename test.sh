@@ -1,3 +1,5 @@
 #!/bin/bash
 
-esbuild --servedir=.
+wasm-pack build --target=web
+
+./esbuild --servedir=.
