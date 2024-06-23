@@ -7,7 +7,7 @@ Start with [wgpu tutorial](https://sotrh.github.io/learn-wgpu/#what-is-wgpu) bef
     - [x] Buffers and Indicies
     - [x] Textures and bind groups
     - [ ] Uniform buffers and 3d camera
-    - [ ] Instancing
+    - [x] Instancing
     - [ ] The Depth Buffer
     - [ ] Model Loading
 - [ ] Intermediate
